@@ -3,18 +3,24 @@
 count=0
 numb=20
 
-while count<20
-    for i in 1..20
-        if numbr%i==0
-            count++
+while count<19
+    for i in 2..20
+        if numb%i==0
+            count+=1
         else
             count=0
-        end
-        
-            
+            break
+        end 
+        puts count.to_s
+        print("\n")
     end
-    numbr++
+    numb+=1
+    puts numb.to_s
+    print("\n")
+    
 end
-puts("The min number is " + numbr.to_s)
+fin= numb-1
+puts("The min number is " + fin.to_s)
+
 
 

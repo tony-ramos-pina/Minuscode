@@ -1,20 +1,17 @@
 
+#include Math
 
-count=0
-numb=20
+numb=1
 
-while count<20
-    for i in 1..20
-        if numbr%i==0
-            count++
-        else
-            count=0
-        end
-        
-            
-    end
-    numbr++
+
+for i in 1..20
+    numb= (numb*i)/(numb.gcd(i))  #Greatest common Divisor
 end
-puts("The min number is " + numbr.to_s)
+
+#puts numb.to_s
+#print("\n")
+    
+puts("The smallest number that can be devided evenly by all numbers from 1 to 20 is: " + numb.to_s)
+
 
 
